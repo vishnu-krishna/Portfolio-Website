@@ -1,0 +1,222 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300italic,300,100,100italic,400italic,700,700italic,900,900italic);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+a:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.wraper {
+    width: 100%;
+    
+}
+
+.wraper:before,
+.wraper:after {
+    display: table;
+    content: " ";
+}
+
+.wraper:after {
+    clear: both;
+}
+
+
+/* Skills Style 4 */
+
+.skillst4 .skillbar {
+    width: 100%;
+    height: 25px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #fff;
+    -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, .4);
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, .4);
+    position: relative;
+}
+
+.skillst4 .skillbar {
+    color: white;
+    padding: 1px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.skillst4 .count-bar {
+    height: 23px;
+    position: relative;
+    width: 0px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #59b3e5;
+    -moz-box-shadow: -1px 0 7px rgba(0, 0, 0, .1), inset 0 0 13px rgba(0, 0, 0, .48);
+    -webkit-box-shadow: -1px 0 7px rgba(0, 0, 0, .1), inset 0 0 13px rgba(0, 0, 0, .48);
+    box-shadow: -1px 0 7px rgba(0, 0, 0, .1), inset 0 0 13px rgba(0, 0, 0, .48);
+}
+
+.skillst4 .count-bar.color-1 {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDM3MCAyMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0xLjQyMTA4NTQ3MTUyMDJlLTE0JSIgeTE9IjUwJSIgeDI9IjEwMCUiIHkyPSI1MCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNGJhNWNmIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSI0NSUiIHN0b3AtY29sb3I9IiM0YmE1Y2YiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZjU1M2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjM3MCIgaGVpZ2h0PSIyMSIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+    background-image: -moz-linear-gradient(left, #4ba5cf 0%, #4ba5cf 44.95%, #ef553b 100%);
+    background-image: -o-linear-gradient(left, #4ba5cf 0%, #4ba5cf 44.95%, #ef553b 100%);
+    background-image: -webkit-linear-gradient(left, #4ba5cf 0%, #4ba5cf 44.95%, #ef553b 100%);
+    background-image: linear-gradient(left, #4ba5cf 0%, #4ba5cf 44.95%, #ef553b 100%);
+}
+
+.skillst4 .count-bar.color-2 {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDQyMCAyMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0xLjQyMTA4NTQ3MTUyMDJlLTE0JSIgeTE9IjUwJSIgeDI9IjEwMCUiIHkyPSI1MCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZiYjM3IiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmZmJiMzciIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNTRiMzEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQyMCIgaGVpZ2h0PSIyMSIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+    background-image: -moz-linear-gradient(left, #ffbb37 0%, #ffbb37 49.88%, #e54b31 100%);
+    background-image: -o-linear-gradient(left, #ffbb37 0%, #ffbb37 49.88%, #e54b31 100%);
+    background-image: -webkit-linear-gradient(left, #ffbb37 0%, #ffbb37 49.88%, #e54b31 100%);
+    background-image: linear-gradient(left, #ffbb37 0%, #ffbb37 49.88%, #e54b31 100%);
+}
+
+.skillst4 .count-bar.color-3 {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDI5MCAyMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0xLjQyMTA4NTQ3MTUyMDJlLTE0JSIgeTE9IjUwJSIgeDI9IjEwMCUiIHkyPSI1MCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMjM5MTkxIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSI1NSUiIHN0b3AtY29sb3I9IiMyMzkxOTEiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYjUxMzciIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjI5MCIgaGVpZ2h0PSIyMSIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+    background-image: -moz-linear-gradient(left, #239191 0%, #239191 54.54%, #eb5137 100%);
+    background-image: -o-linear-gradient(left, #239191 0%, #239191 54.54%, #eb5137 100%);
+    background-image: -webkit-linear-gradient(left, #239191 0%, #239191 54.54%, #eb5137 100%);
+    background-image: linear-gradient(left, #239191 0%, #239191 54.54%, #eb5137 100%);
+}
+
+.skillst4 .count-bar.color-4 {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDQwMCAyMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0xLjQyMTA4NTQ3MTUyMDJlLTE0JSIgeTE9IjUwJSIgeDI9IjEwMCUiIHkyPSI1MCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNzM1YmFmIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSI1MyUiIHN0b3AtY29sb3I9IiM3MzViYWYiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZDUzMzkiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIyMSIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+    background-image: -moz-linear-gradient(left, #735baf 0%, #735baf 52.98%, #ed5339 100%);
+    background-image: -o-linear-gradient(left, #735baf 0%, #735baf 52.98%, #ed5339 100%);
+    background-image: -webkit-linear-gradient(left, #735baf 0%, #735baf 52.98%, #ed5339 100%);
+    background-image: linear-gradient(left, #735baf 0%, #735baf 52.98%, #ed5339 100%);
+}
+
+.skillst4 .count-bar.color-5 {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDQ2NiAyMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0xLjQyMTA4NTQ3MTUyMDJlLTE0JSIgeTE9IjUwJSIgeDI9IjEwMCUiIHkyPSI1MCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMzE3ZGEzIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSI0NyUiIHN0b3AtY29sb3I9IiMzMTdkYTMiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZjdjYTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQ2NiIgaGVpZ2h0PSIyMSIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+    background-image: -moz-linear-gradient(left, #317da3 0%, #317da3 46.75%, #1f7ca9 100%);
+    background-image: -o-linear-gradient(left, #317da3 0%, #317da3 46.75%, #1f7ca9 100%);
+    background-image: -webkit-linear-gradient(left, #317da3 0%, #317da3 46.75%, #1f7ca9 100%);
+    background-image: linear-gradient(left, #317da3 0%, #317da3 46.75%, #1f7ca9 100%);
+}
+
+.skillst4 .title {
+    position: absolute;
+    line-height: 25px;
+    top: -25px;
+    left: 0;
+    padding-left: 10px;
+}
+
+.skillst4 .count-bar .count {
+    position: absolute;
+    line-height: 25px;
+    top: -25px;
+    right: 0;
+}
+
+.skillst4 {
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 145px;
+}
+
+
+/*Coustom Media Query Css*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {}

@@ -26,13 +26,13 @@ var waypoints = $('#handler-first').waypoint(function(direction) {
 
 
     /*Scrolling element*/
-    $('.button').click(function (e) {
+    /*$('.button').click(function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $(".aboutme").offset().top - 100
         }, 1000, 'easeInSine');
 
-    });
+    });*/
 
     $('.about').click(function (e) {
         e.preventDefault();

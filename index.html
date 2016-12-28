@@ -14,6 +14,7 @@
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
     <!--<link href="Contents/CSS/onepage-scroll.css" rel="stylesheet">-->
     <link href="Contents/CSS/Style.css" rel="stylesheet" />
+    <link href="Contents/CSS/index.css" rel="stylesheet" type="text/css" media="all" />
     <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="apple-touch-icon" sizes="57x57" href="Contents/Icons/apple-touch-icon-57x57.png">
@@ -59,9 +60,15 @@
         </div>
         <div class="hero-text-box row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h1 class="wow fadeIn" data-wow-delay="0.3s" data-wow-duration="1.5s ">Web UI/UX Designer & Front End Developer</h1> <a class="button mybutton" href="http://github.com/vishnucute05" target="_blank">
+                <h1 class="wow fadeIn" data-wow-delay="0.3s" data-wow-duration="1.5s ">Web UI/UX Designer & Front End Developer</h1>
+                <!--
+                   <a class="button mybutton" href="http://github.com/vishnucute05" target="_blank">
                     Know Me!!
                 </a>
+-->
+                <ul class=button>
+                    <li><i class="fa fa-github" aria-hidden="true" style="font-size:48px;color:#2C333D;"></i><a class="githubname" href="http://github.com/vishnucute05" target="_blank"><i>Github Repo</i></a></li>
+                </ul>
                 <div class="double-border"> <i class="fa fa-angle-double-down fa-3x wow bounce " data-wow-iteration="infinite "></i> </div>
             </div>
         </div>
@@ -145,50 +152,403 @@
     </section>
     <!--End of Skillset Section -->
     <!--Works Section -->
-    <section class="section-works">
-        <div class="row workspacing ">
-            <div class="row work-showcase ">
-                <figure class="work-photo col-lg-3 col-md-3 col-sm-6 col-xs-6 "> <img src="Contents/Images/3.png " alt="Images " class="image wow fadeInLeft" data-wow-delay="0.2s" /> <span class="caption simple-caption ">
-                    <p>Logo Designed for DevOps Team</p>
-                    </span> </figure>
-                <figure class="work-photo col-lg-3 col-md-3 col-sm-6 col-xs-6 "> <img src="Contents/Images/4.png " alt="Images " class="image wow fadeInLeft" data-wow-delay="0.4s" /> <span class="caption simple-caption ">
-                    <p>ABC Logo -Inspired </p>
-                    </span> </figure>
-                <figure class="work-photo col-lg-3 col-md-3 col-sm-6 col-xs-6 "> <img src="Contents/Images/5.png " alt=" Images " class="image wow fadeInRight" data-wow-delay="0.6s" /> <span class="caption simple-caption ">
-                    <p>Rangoli Design - Made Experimentally</p>
-                    </span> </figure>
-                <figure class="work-photo col-lg-3 col-md-3 col-sm-6 col-xs-6 "> <img src="Contents/Images/6.png " alt="Images " class="image wow fadeInRight" data-wow-delay="0.8s" /> <span class="caption simple-caption ">
-                    <p>Logo Designed Hey Bob- Car Operator</p>
-                    </span> </figure>
-            </div>
-            <div class="row work-showcase ">
-                <figure class="work-photo col-lg-3 col-md-3 col-sm-6 col-xs-6 "> <img src="Contents/Images/7.png " alt=" Images " class="image wow fadeInLeft" data-wow-delay="0.2s" /> <span class="caption simple-caption ">
-                    <p>Leaf Logo- Inspired</p>
-                        </span> </figure>
-                <figure class="work-photo col-lg-3 col-md-3 col-sm-6 col-xs-6 "> <img src="Contents/Images/8.png " alt="Images " class="image wow fadeInLeft" data-wow-delay="0.4s" /> <span class="caption simple-caption ">
-                        <p>NXT Logo for a Helmet Company</p></span> </figure>
-                <figure class="work-photo col-lg-3 col-md-3 col-sm-6 col-xs-6 "> <img src="Contents/Images/9.png " alt=" Images " class="image wow fadeInRight" data-wow-delay="0.6s" /> <span class="caption simple-caption ">
-                        <p>My Personal Logo</p></span> </figure>
-                <figure class="work-photo col-lg-3 col-md-3 col-sm-6 col-xs-6 "> <img src="Contents/Images/10.png " alt="Images " class="image wow fadeInRight" data-wow-delay="0.8s" /> <span class="caption simple-caption ">
-                        <p>Logo Designed Freelancing Guys</p></span> </figure>
-            </div>
-            <div class="row work-showcase ">
-                <figure class="work-photo col-lg-3 col-md-3 col-sm-6 col-xs-6 "> <img src="Contents/Images/11.png " alt=" Images " class="image wow fadeInLeft" data-wow-delay="0.2s" /> <span class="caption simple-caption ">
-                        <p>Logo Designed Freelancing Guys</p></span> </figure>
-                <figure class="work-photo col-lg-3 col-md-3 col-sm-6 col-xs-6 "> <img src="Contents/Images/12.png " alt="Images " class="image wow fadeInLeft" data-wow-delay="0.4s" /> <span class="caption simple-caption">
-                        <p>Rangoli Design - Made Experimentally</p></span> </figure>
-                <figure class="work-photo col-lg-3 col-md-3 col-sm-6 col-xs-6 "> <img src="Contents/Images/13.png " alt=" Images " class="image wow fadeInRight" data-wow-delay="0.6s" /> <span class="caption simple-caption ">
-                        <p>Daisies Logo</p></span> </figure>
-                <figure class="work-photo col-lg-3 col-md-3 col-sm-6 col-xs-6 "> <img src="Contents/Images/14.png " alt="Images " class="image wow fadeInRight" data-wow-delay="0.8s" /> <span class="caption simple-caption ">
-                        <p>Logo for a Client</p></span> </figure>
+    <section class="section-works" id="work">
+        <div class="container">
+            <ul class="simplefilter">
+                <li class="active" data-filter="all">All</li>
+                <li data-filter="1">Logo Design</li>
+                <li data-filter="2">Web Design</li>
+                <li data-filter="3">Photoshop Design</li>
+                <li data-filter="4">Icon Design</li>
+            </ul>
+            <div class="filtr-container">
+                <div class=" col-md-4 filtr-item" data-category="4" data-sort="Busy streets">
+                    <a href="images/pc.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Icons/Barb.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="4" data-sort="Luminous night">
+                    <a href="images/pc1.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Icons/Beer.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="4" data-sort="City wonders">
+                    <a href="images/pc2.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Icons/Dumb.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="4" data-sort="Peaceful lake">
+                    <a href="images/pc3.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Icons/Glass.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="4" data-sort="Peaceful lake">
+                    <a href="images/pc4.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Icons/LabFlask.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="4" data-sort="Peaceful lake">
+                    <a href="images/pc5.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Icons/Sun.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4  filtr-item" data-category="1" data-sort="City lights">
+                    <a href="images/pc6.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Logos/14.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4  filtr-item" data-category="1" data-sort="City lights">
+                    <a href="images/pc6.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Logos/13.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4  filtr-item" data-category="1" data-sort="City lights">
+                    <a href="images/pc6.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Logos/12.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4  filtr-item" data-category="1" data-sort="City lights">
+                    <a href="images/pc6.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Logos/11.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4  filtr-item" data-category="1" data-sort="City lights">
+                    <a href="images/pc6.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Logos/10.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="1" data-sort="Dreamhouse">
+                    <a href="Contents/Images/Logos/9.png" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Logos/9.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="1" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Logos/8.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="1" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Logos/7.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="1" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Logos/6.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="1" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Logos/5.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="1" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box"><img src="Contents/Images/Logos/4.png" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Photoshop/Bulb.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Photoshop/Egg.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Photoshop/Ghost.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Photoshop/Land.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Photoshop/Lion.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Photoshop/Lost.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Photoshop/Magic.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Photoshop/Night.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Photoshop/Pencil.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Photoshop/Pretty.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Photoshop/Skull.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
+                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Photoshop/Underwater.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Profession</h4>
+                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix"> </div>
             </div>
         </div>
     </section>
     <!--End of Works Section -->
     <!--About Me Section -->
-    <section class="aboutme ">
+    <section class="aboutme" style="background-color: #2C333D !important;">
         <div class=row>
             <div id="colorchange" class="col-lg-5 col-md-5 col-sm-12 col-xs-12 wow bounceInLeft " data-wow-delay="0.1s " data-wow-duration="1.5s "> <img class="bottom" src="Contents/Images/Color.png " /> <img class="top" src="Contents/Images/Original.png " /> </div>
+            
             <div class="mylist col-lg-7 col-md-7 col-sm-12 col-xs-12 wow bounceInRight " data-wow-delay="0.1s " data-wow-duration="1.5s "> <img src="Contents/Images/Aboutme.svg" class="aboutimage img-responsive " /> </div>
         </div>
     </section>
@@ -217,12 +577,14 @@
                 <div class="col-lg-12 col-md-12 ">
                     <h1>Contact Me:</h1>
                     <ul class="list-inline ">
+                        <!--
                         <li class="wow fadeIn " data-wow-delay="0.2s "><a href="http://www.flickr.com " target="blank "><i class="fa fa-flickr fa-4x "></i></a></li>
                         <li class="wow fadeIn " data-wow-delay="0.3s "><a href="http://www.facebook.com " target="blank "><i class="fa fa-facebook-official fa-4x "></i></a></li>
                         <li class="wow fadeIn " data-wow-delay="0.4s "><a href="http://www.twitter.com " target="blank "><i class="fa fa-twitter-square fa-4x "></i></a></li>
                         <li class="wow fadeIn " data-wow-delay="0.5s "><a href="http://www.instagram.com " target="blank "><i class="fa fa-instagram fa-4x "></i></a></li>
+-->
                         <li class="wow fadeIn " data-wow-delay="0.6s "><a href="https://www.linkedin.com/in/vishnu-chander-852972113" target="blank "><i class="fa fa-linkedin-square fa-4x "></i></a></li>
-                        <li class="wow fadeIn " data-wow-delay="0.7s "><a href="http://www.pinterest.com " target="blank "><i class="fa fa-pinterest-square fa-4x "></i></a></li>
+                        <!--                        <li class="wow fadeIn " data-wow-delay="0.7s "><a href="http://www.pinterest.com " target="blank "><i class="fa fa-pinterest-square fa-4x "></i></a></li>-->
                     </ul>
                 </div>
             </div>
@@ -258,6 +620,25 @@
     <script src="Contents/JS/Scripts.js" type="text/javascript "></script>
     <script src="Contents/JS/jquery.onepage-scroll.min.js" type="text/javascript "></script>
     <script src="Contents/JS/jquery.easing.1.3.js" type="text/javascript "></script>
+    <!--    Gallery-->
+    <!-- Include jQuery & Filterizr -->
+    <script src="Contents/JS/jquery.filterizr.js"></script>
+    <script src="Contents/JS/controls.js"></script>
+    <!-- Kick off Filterizr -->
+    <script type="text/javascript">
+        $(function () {
+            //Initialize filterizr with default options
+            $('.filtr-container').filterizr();
+        });
+    </script>
+    <link rel="stylesheet" href="Contents/CSS/swipebox.css">
+    <script src="Contents/JS/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $(".swipebox").swipebox();
+        });
+    </script>
+    <!--   End of Gallery-->
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;

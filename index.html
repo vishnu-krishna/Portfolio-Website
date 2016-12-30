@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
     <link href="Contents/CSS/Normalize.css" rel="stylesheet" />
     <link href="Contents/CSS/grid.css" rel="stylesheet" />
     <link href="Contents/CSS/ionicons.min.css" rel="stylesheet" />
@@ -13,10 +15,13 @@
     <link href="Contents/CSS/Skillbar.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
     <!--<link href="Contents/CSS/onepage-scroll.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="Contents/CSS/Timeline.css">
+    <!-- Resource style -->
     <link href="Contents/CSS/Style.css" rel="stylesheet" />
     <link href="Contents/CSS/index.css" rel="stylesheet" type="text/css" media="all" />
     <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!--
     <link rel="apple-touch-icon" sizes="57x57" href="Contents/Icons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="Contents/Icons/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="Contents/Icons/apple-touch-icon-72x72.png">
@@ -37,6 +42,7 @@
     <meta name="msapplication-TileImage" content="Contents/Icons/mstile-144x144.png">
     <meta name="msapplication-config" content="Contents/Icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+-->
     <meta name="description" content="Front end Developer Portfolio"> </head>
 
 <body>
@@ -116,31 +122,25 @@
                             <div class="count "></div>
                         </div>
                     </div>
-                    <div class="skillbar" data-percent="75%">
-                        <div class="title ">Wordpress</div>
-                        <div class="count-bar color-4 ">
-                            <div class="count "></div>
-                        </div>
-                    </div>
                     <div class="skillbar" data-percent="90%">
                         <div class="title ">Angular JS</div>
                         <div class="count-bar color-4 ">
                             <div class="count "></div>
                         </div>
                     </div>
-                    <div class="skillbar" data-percent="65%">
+                    <div class="skillbar" data-percent="85%">
                         <div class="title ">NODE JS</div>
                         <div class="count-bar color-4 ">
                             <div class="count "></div>
                         </div>
                     </div>
-                    <div class="skillbar" data-percent="75%">
+                    <div class="skillbar" data-percent="90%">
                         <div class="title ">MEAN Stack</div>
                         <div class="count-bar color-4 ">
                             <div class="count "></div>
                         </div>
                     </div>
-                    <div class="skillbar" data-percent="60%">
+                    <div class="skillbar" data-percent="50%">
                         <div class="title ">PHP /C#</div>
                         <div class="count-bar color-4 ">
                             <div class="count "></div>
@@ -155,7 +155,7 @@
     <section class="section-works" id="work">
         <div class="container">
             <ul class="simplefilter">
-                <li class="active" data-filter="all">All</li>
+                <li class="active" data-filter="1, 3, 4">All</li>
                 <li data-filter="1">Logo Design</li>
                 <li data-filter="2">Web Design</li>
                 <li data-filter="3">Photoshop Design</li>
@@ -163,144 +163,124 @@
             </ul>
             <div class="filtr-container">
                 <div class=" col-md-4 filtr-item" data-category="4" data-sort="Busy streets">
-                    <a href="images/pc.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Icons/Barb.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Icons/Barb.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                    <h4>Barbeque Icon</h4>
+                                    <!--                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>-->
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="4" data-sort="Luminous night">
-                    <a href="images/pc1.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Icons/Beer.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Icons/Beer.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Beer Bottle Icon</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="4" data-sort="City wonders">
-                    <a href="images/pc2.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Icons/Dumb.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Icons/Dumb.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Dumbell Icon</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="4" data-sort="Peaceful lake">
-                    <a href="images/pc3.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Icons/Glass.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Icons/Glass.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Wine Glass Icon</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="4" data-sort="Peaceful lake">
-                    <a href="images/pc4.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Icons/LabFlask.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Icons/LabFlask.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Lab Flask Icon</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="4" data-sort="Peaceful lake">
-                    <a href="images/pc5.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Icons/Sun.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Icons/Sun.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Sun Icon Done experimentally</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4  filtr-item" data-category="1" data-sort="City lights">
-                    <a href="images/pc6.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Logos/14.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Logos/14.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Logo for a Client</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4  filtr-item" data-category="1" data-sort="City lights">
-                    <a href="images/pc6.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Logos/13.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Logos/13.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Daisies logo for a client</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4  filtr-item" data-category="1" data-sort="City lights">
-                    <a href="images/pc6.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Logos/12.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Logos/12.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Simple Logo Made Experimentally</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4  filtr-item" data-category="1" data-sort="City lights">
-                    <a href="images/pc6.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Logos/11.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Logos/11.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Logo for an Freelance Client</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4  filtr-item" data-category="1" data-sort="City lights">
-                    <a href="images/pc6.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Logos/10.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Logos/10.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Logo for an Freelance Client V2</h4> </div>
                             </div>
                         </div>
                     </a>
@@ -311,229 +291,219 @@
                             <div class="img-box"><img src="Contents/Images/Logos/9.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>My Own Logo</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="1" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Logos/8.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Logos/8.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Logo for a helmet company</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="1" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Logos/7.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Logos/7.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Leaf Logo - Inspired</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="1" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Logos/6.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Logos/6.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Logo for Hey Bob Car Rental Android App</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="1" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Logos/5.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Logos/5.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Rangoli Design - Experimental</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="1" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Logos/4.png" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box"><img src="Contents/Images/Logos/4.png" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>abc logo - inspired</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Photoshop/Bulb.jpg" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box no-border"><img src="Contents/Images/Photoshop/Bulb.jpg" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Bulb inside water</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Photoshop/Egg.jpg" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box no-border"><img src="Contents/Images/Photoshop/Egg.jpg" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Transparent Egg</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Photoshop/Ghost.jpg" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box no-border"><img src="Contents/Images/Photoshop/Ghost.jpg" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Ghost House</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Photoshop/Land.jpg" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box no-border"><img src="Contents/Images/Photoshop/Land.jpg" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Pretty Girl in landscape</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Photoshop/Lion.jpg" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box no-border"><img src="Contents/Images/Photoshop/Lion.jpg" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Galaxy Lion</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Photoshop/Lost.jpg" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box no-border"><img src="Contents/Images/Photoshop/Lost.jpg" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Seems to be Lost somewhere</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Photoshop/Magic.jpg" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box no-border"><img src="Contents/Images/Photoshop/Magic.jpg" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Alone in Forest</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Photoshop/Night.jpg" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box no-border"><img src="Contents/Images/Photoshop/Night.jpg" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Travel at Night</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Photoshop/Pencil.jpg" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box no-border"><img src="Contents/Images/Photoshop/Pencil.jpg" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Sketch Effect</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Photoshop/Pretty.jpg" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box no-border"><img src="Contents/Images/Photoshop/Pretty.jpg" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Morning!!!</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Photoshop/Skull.jpg" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box no-border"><img src="Contents/Images/Photoshop/Skull.jpg" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
-                                </div>
+                                    <h4>Skull Face</h4> </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 filtr-item" data-category="3" data-sort="Dreamhouse">
-                    <a href="images/pc8.jpg" class="b-link-stripe b-animate-go  swipebox">
+                    <a href="Contents/Images/Photoshop/Underwater.jpg" class="b-link-stripe b-animate-go  swipebox">
                         <div class="ed-gal-effect slow-zoom horizontal">
                             <div class="img-box no-border"><img src="Contents/Images/Photoshop/Underwater.jpg" class="img-responsive" alt=" " /></div>
                             <div class="ed-text-box">
                                 <div class="ed-gal-text">
-                                    <h4>Profession</h4>
-                                    <p>Sit accusamus, vel blanditiis iure minima ipsa molestias minus laborum velit, nulla.</p>
+                                    <h4>Fallen!!!!</h4> </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="2" data-sort="Dreamhouse">
+                    <a href="Contents/Images/Web/1st.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Web/1st.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Single Page Template</h4>
+                                    <p>Look at my Github Repo for full image</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 filtr-item" data-category="2" data-sort="Dreamhouse">
+                    <a href="Contents/Images/Web/2nd.jpg" class="b-link-stripe b-animate-go  swipebox">
+                        <div class="ed-gal-effect slow-zoom horizontal">
+                            <div class="img-box no-border"><img src="Contents/Images/Web/2nd.jpg" class="img-responsive" alt=" " /></div>
+                            <div class="ed-text-box">
+                                <div class="ed-gal-text">
+                                    <h4>Portfolio Template</h4>
+                                    <p>Look at my Github Repo for full image</p>
                                 </div>
                             </div>
                         </div>
@@ -545,12 +515,75 @@
     </section>
     <!--End of Works Section -->
     <!--About Me Section -->
-    <section class="aboutme" style="background-color: #2C333D !important;">
+    <section class="aboutme" style="background-color:#2C333D !important;">
         <div class=row>
             <div id="colorchange" class="col-lg-5 col-md-5 col-sm-12 col-xs-12 wow bounceInLeft " data-wow-delay="0.1s " data-wow-duration="1.5s "> <img class="bottom" src="Contents/Images/Color.png " /> <img class="top" src="Contents/Images/Original.png " /> </div>
-            
-            <div class="mylist col-lg-7 col-md-7 col-sm-12 col-xs-12 wow bounceInRight " data-wow-delay="0.1s " data-wow-duration="1.5s "> <img src="Contents/Images/Aboutme.svg" class="aboutimage img-responsive " /> </div>
-        </div>
+            <section class="cd-horizontal-timeline">
+                <div class="timeline">
+                    <div class="events-wrapper">
+                        <div class="events">
+                            <ol>
+                                <li><a href="#0" data-date="08/08/2007" class="selected">2007</a></li>
+                                <li><a href="#0" data-date="28/02/2011">2011</a></li>
+                                <li><a href="#0" data-date="20/07/2011">2011</a></li>
+                                <li><a href="#0" data-date="08/08/2013">2013</a></li>
+                            </ol> <span class="filling-line" aria-hidden="true"></span> </div>
+                        <!-- .events -->
+                    </div>
+                    <!-- .events-wrapper -->
+                    <ul class="cd-timeline-navigation">
+                        <li><a href="#0" class="prev inactive">Prev</a></li>
+                        <li><a href="#0" class="next">Next</a></li>
+                    </ul>
+                    <!-- .cd-timeline-navigation -->
+                </div>
+                <!-- .timeline -->
+                <div class="events-content">
+                    <ol>
+                        <li class="selected" data-date="08/08/2007">
+                            <h2>Infosys Technologies Ltd, Bangalore</h2> <em>Oct 2007 - Jan 2011</em>
+                            <p> • Applied hand-written, object-oriented JavaScript, CSS3 and HTML5 with an emphasis on performance, scalability and a positive user experience.
+                                <br> • Contributed user interface design mockups and designs.
+                                <br>• Worked extensively as Automation scripter using PowerShell and VB scripting.
+                                <br> • Developed front-end code using HTML and CSS </p>
+                        </li>
+                        <li data-date="28/02/2011">
+                            <h2>Dell EMC Corporation, Bangalore</h2> <em>Feb 2011 - June 2011</em>
+                            <p> • Perform website maintenance and enhancements
+                                <br>• Monitored technical aspects of the front-end delivery for several projects
+                                <br> • Provide assistance to the bank-end developers in troubleshooting and coding
+                                <br> • Create browser and platform compatible CSS (cascading style sheets) codes
+                                <br> • Identify usability and develop functional and smooth, easy-to-operate and eye-catching web applications
+                                <br> • Requirements gathering, analysis and documentation in accordance with business requests among business users.
+                                <br> • Developed front-end code using HTML5 & CSS3 techniques, with a focus on object-oriented design. </p>
+                        </li>
+                        <li data-date="20/07/2011">
+                            <h2>Hewlett Packard Ltd, Bangalore</h2> <em>July 2011 - June 2013</em>
+                            <p> • Applied a good knowledge of JavaScript, HTML, DOM, and CSS to deliver advanced user interfaces and controls.
+                                <br> • Developed company Intranet pages accessed by over 50000 employees.
+                                <br> • Created extensive documentation of the applications using Visio Diagrams
+                                <br> • Developed and Maintained web applications using ASP.net and C#.net
+                                <br> • Converted Photoshop layouts to web pages using HTML, CSS, and JavaScript
+                                <br> • Interacted with designers, testing team, Internal clients and other business users to capture all the requirements. </p>
+                        </li>
+                        <li data-date="08/08/2013">
+                            <h2>Philips India Ltd, Bangalore</h2> <em>July 2013 - Present</em>
+                            <p> • Privileged to be responsible for front end development UI & design/UX on potential business changing Patient Care Application using HTML, CSS3, JQuery, AngularJS and JavaScript, working closely with doctors and scientists in an Agile (SCRUM) environment.
+                                <br> • Created and maintained 1 Full stack patient data applications using Angular JS, Node JS and Mongo DB (6 months).
+                                <br> • Building Frontend based on Angular JS ES2015.
+                                <br> • Building Backend based on NodeJS, ExpressJS, Mongoose and etc.
+                                <br> • Scrum Master of the team and thereby planning sprints, creating burn down charts, Effort tracking and resource allocation.
+                                <br> • Led a team of 3 front-end Developers.
+                                <br> • Created designs for Philips Communications and Branding team.
+                                <br> • Worked closely with the design team and ensured projects are delivered
+                                <br> • Create browser and platform compatible CSS (cascading style sheets) and also worked on CSS3 Animations
+                                <br> </p>
+                        </li>
+                    </ol>
+                </div>
+                <!-- .events-content -->
+            </section>
+            <!--            <div class="mylist col-lg-7 col-md-7 col-sm-12 col-xs-12 wow bounceInRight " data-wow-delay="0.1s " data-wow-duration="1.5s "> <img src="Contents/Images/Aboutme.svg" class="aboutimage img-responsive " /> </div>--></div>
     </section>
     <section class="testimonials ">
         <div class="row ">
@@ -621,6 +654,12 @@
     <script src="Contents/JS/jquery.onepage-scroll.min.js" type="text/javascript "></script>
     <script src="Contents/JS/jquery.easing.1.3.js" type="text/javascript "></script>
     <!--    Gallery-->
+    <!--    timeline-->
+    <!--<script src="js/jquery-2.1.4.js"></script>-->
+    <script src="Contents/JS/jquery.mobile.custom.min.js"></script>
+    <script src="Contents/JS/main.js"></script>
+    <!-- Resource jQuery -->
+    <!--   End of Timeline-->
     <!-- Include jQuery & Filterizr -->
     <script src="Contents/JS/jquery.filterizr.js"></script>
     <script src="Contents/JS/controls.js"></script>

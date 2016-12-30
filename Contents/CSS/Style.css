@@ -679,12 +679,12 @@ h3.tittle {
 }
 .ed-gal-text h4 {
     color: #fff;
-    font-size: 2em;
+    font-size: 1em;
 }
 .ed-gal-text p {
     color: #fff;
     font-size: 1em;
-    line-height: 2.2em;
+    line-height: 1.5em;
 }
 .gal-btm{
 	margin-top:90px;
@@ -705,7 +705,9 @@ h3.tittle {
 */
     /*End of Works Section*/
     /*Start of Aboutme Section*/
-    
+.selected h2{
+        font-family: 'Lora', serif !important;
+}  
 .aboutme {
     background-size: 100% 100%;
     background-color: #2C333D !important;

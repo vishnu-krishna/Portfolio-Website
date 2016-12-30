@@ -89,7 +89,7 @@
 
 #swipebox-action #swipebox-prev, #swipebox-action #swipebox-next,
 #swipebox-action #swipebox-close {
-  background-image: url(../images/icons.png);
+  background-image: url(../Images/icons.svg);
   background-repeat: no-repeat;
   border: none!important;
   text-decoration: none!important;

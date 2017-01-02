@@ -81,7 +81,8 @@
         //Create the Filterizr obj as an internal private property on the current object
         //to serve as a private namespace
         if (!self._fltr) {
-            self._fltr = $.fn.filterizr.prototype.init(self.selector, (typeof args[0] === 'object' ? args[0] : undefined));
+            //self._fltr = $.fn.filterizr.prototype.init(self.selector, (typeof args[0] === 'object' ? args[0] : undefined));
+            self._fltr = $.fn.filterizr.prototype.init(self, (typeof args[0] === 'object' ? args[0] : undefined));
         }
         //Call all public Filterizr methods through the private Filterizr object
         if (typeof args[0] === 'string') {
@@ -647,9 +648,9 @@
         * @private
         */
         _handleFiltering: function(target) {
-             if (!target) {
-                target = 0;
-            }
+            //  if (!target) {
+            //     target = 0;
+            // }
             var self = this,
                 toFilterOut = self._getArrayOfUniqueItems(self._activeArray, target);
             //Minimize all .filtr-item elements that are not the same between categories

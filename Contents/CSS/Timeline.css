@@ -85,7 +85,7 @@ Main Components
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #7b9d6f;
+    background-color: #BE4157;
     -webkit-transform: scaleX(0);
     -moz-transform: scaleX(0);
     -ms-transform: scaleX(0);
@@ -140,8 +140,8 @@ Main Components
 }
 
 .no-touch .cd-horizontal-timeline .events a:hover::after {
-    background-color: #7b9d6f;
-    border-color: #7b9d6f;
+    background-color: #BE4157;
+    border-color: #BE4157;
 }
 
 .cd-horizontal-timeline .events a.selected {
@@ -149,18 +149,18 @@ Main Components
 }
 
 .cd-horizontal-timeline .events a.selected::after {
-    background-color: #7b9d6f;
-    border-color: #7b9d6f;
+    background-color: #BE4157;
+    border-color: #BE4157;
 }
 
 .cd-horizontal-timeline .events a.older-event::after {
-    border-color: #7b9d6f;
+    border-color: #BE4157;
 }
 
 @media only screen and (min-width: 1100px) {
     .cd-horizontal-timeline {
         margin: 6em auto;
-        margin-top: 0;
+        margin-top: 50px;
     }
     .cd-horizontal-timeline::before {
         /* never visible - this is used in jQuery to check the current MQ */
@@ -225,7 +225,7 @@ Main Components
 }
 
 .no-touch .cd-timeline-navigation a:hover {
-    border-color: #7b9d6f;
+    border-color: #BE4157;
 }
 
 .cd-timeline-navigation a.inactive {

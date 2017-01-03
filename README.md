@@ -1,2 +1,2 @@
-# This is my portfolio Website created to demonstrate my skills
+# My Website
 [Link to My Portfolio Website] (http://vishnucute05.github.io/Portfolio-Website)

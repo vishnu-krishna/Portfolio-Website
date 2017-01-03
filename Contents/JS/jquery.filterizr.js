@@ -4,7 +4,7 @@
 *
 * @author Yiotis Kaltsikis
 * @see {@link http://yiotis.net/filterizr}
-* @version 1.2.1
+* @version 1.2.3
 * @license MIT License
 */
 
@@ -81,8 +81,7 @@
         //Create the Filterizr obj as an internal private property on the current object
         //to serve as a private namespace
         if (!self._fltr) {
-            //self._fltr = $.fn.filterizr.prototype.init(self.selector, (typeof args[0] === 'object' ? args[0] : undefined));
-            self._fltr = $.fn.filterizr.prototype.init(self, (typeof args[0] === 'object' ? args[0] : undefined));
+            self._fltr = $.fn.filterizr.prototype.init(self.selector, (typeof args[0] === 'object' ? args[0] : undefined));
         }
         //Call all public Filterizr methods through the private Filterizr object
         if (typeof args[0] === 'string') {
@@ -113,7 +112,11 @@
                 animationDuration: 0.5,
                 callbacks: {
                     onFilteringStart: function() { },
-                    onFilteringEnd  : function() { }
+                    onFilteringEnd: function() { },
+                    onShufflingStart: function() { },
+                    onShufflingEnd: function() { },
+                    onSortingStart: function() { },
+                    onSortingEnd: function() { }
                 },
                 delay: 0,
                 delayMode: 'progressive',
@@ -149,6 +152,8 @@
             });
             self._lastCategory = 0; //Highest value in data-category of .filtr-items
             self._isAnimating  = false;
+            self._isShuffling  = false;
+            self._isSorting    = false;
             //.filtr-item collections
             self._mainArray   = self._getFiltrItems();
             self._subArrays   = self._makeSubarrays();
@@ -200,10 +205,13 @@
 
             self.trigger('filteringStart');
             //Toggle the toggledFilter in the active categories
-            if (!self._toggledCategories[toggledFilter])
-                self._toggledCategories[toggledFilter] = true;
-            else
-                delete self._toggledCategories[toggledFilter];
+            //If undefined (in case of window resize) ignore
+            if (toggledFilter) {
+                if (!self._toggledCategories[toggledFilter])
+                    self._toggledCategories[toggledFilter] = true;
+                else
+                    delete self._toggledCategories[toggledFilter];
+            }
 
             //If a filter is toggled on then display only items belonging to that category
             if (self._multifilterModeOn()) {
@@ -269,6 +277,11 @@
         shuffle: function() {
             var self = this;
 
+            //ShufflingStart callback
+            self._isAnimating = true;
+            self._isShuffling = true;
+            self.trigger('shufflingStart');
+
             self._mainArray = self._fisherYatesShuffle(self._mainArray);
             self._subArrays = self._makeSubarrays();
 
@@ -292,6 +305,11 @@
             //Set defaults
             attr 	  = attr      || 'domIndex';
             sortOrder = sortOrder || 'asc';
+
+            //SortingStart callback
+            self._isAnimating = true;
+            self._isSorting   = true;
+            self.trigger('sortingStart');
 
             //Register sort attr on all elements if it is a user-defined data-attribute
             var isUserAttr = attr !== 'domIndex' && attr !== 'sortData' && attr !== 'w' && attr!== 'h';
@@ -329,6 +347,21 @@
                 for (i = 0; i < self._mainArray.length; i++) {
                     self._mainArray[i].css('transition', 'all ' + self.options.animationDuration + 's ' +  self.options.easing + ' ' + self._mainArray[i]._calcDelay() + 'ms');
                 }
+            }
+            //If the user tries to override a callback, make sure undefined callbacks are set to empty functions
+            if (options.callbacks) {
+                if (!options.callbacks.onFilteringStart)
+                    self.options.callbacks.onFilteringStart = function() { };
+                if (!options.callbacks.onFilteringEnd)
+                    self.options.callbacks.onFilteringEnd = function() { };
+                if (!options.callbacks.onShufflingStart)
+                    self.options.callbacks.onShufflingStart = function() { };
+                if (!options.callbacks.onShufflingEnd)
+                    self.options.callbacks.onShufflingEnd = function() { };
+                if (!options.callbacks.onSortingStart)
+                    self.options.callbacks.onSortingStart = function() { };
+                if (!options.callbacks.onSortingEnd)
+                    self.options.callbacks.onSortingEnd = function() { };
             }
             //If the user has not defined a transform property in their CSS, add it
             //while overriding, including translates for movement
@@ -372,8 +405,10 @@
             for (i = 0; i < self._mainArray.length; i++) {
                 //Multiple categories scenario
                 if (typeof self._mainArray[i]._category === 'object') {
-                    for (var p in self._mainArray[i]._category)
-                        subArrays[self._mainArray[i]._category[p] - 1].push(self._mainArray[i]);
+                    var length = self._mainArray[i]._category.length;
+                    for (var x = 0; x < length; x++) {
+                        subArrays[self._mainArray[i]._category[x] - 1].push(self._mainArray[i]);
+                    }
                 }
                 //Single category
                 else subArrays[self._mainArray[i]._category - 1].push(self._mainArray[i]);
@@ -491,6 +526,26 @@
             //onFilteringEnd event
             .on('filteringEnd', function() {
                 self.options.callbacks.onFilteringEnd();
+            })
+            //onShufflingStart event
+            .on('shufflingStart', function() {
+                self._isShuffling = true;
+                self.options.callbacks.onShufflingStart();
+            })
+            //onFilteringEnd event
+            .on('shufflingEnd', function() {
+                self.options.callbacks.onShufflingEnd();
+                self._isShuffling = false;
+            })
+            //onSortingStart event
+            .on('sortingStart', function() {
+                self._isSorting = true;
+                self.options.callbacks.onSortingStart();
+            })
+            //onSortingEnd event
+            .on('sortingEnd', function() {
+                self.options.callbacks.onSortingEnd();
+                self._isSorting = false;
             });
         },
 
@@ -501,7 +556,7 @@
         */
         _calcItemPositions: function() {
             var self  = this,
-            array = self._activeArray,
+                array = self._activeArray,
             //Container data
             containerHeight = 0,
             cols = Math.round(self.width() / self.find('.filtr-item').outerWidth()),
@@ -648,9 +703,6 @@
         * @private
         */
         _handleFiltering: function(target) {
-            //  if (!target) {
-            //     target = 0;
-            // }
             var self = this,
                 toFilterOut = self._getArrayOfUniqueItems(self._activeArray, target);
             //Minimize all .filtr-item elements that are not the same between categories
@@ -890,17 +942,17 @@
         */
         _getCategory: function() {
             var self = this,
-            ret  = self.data('category');
+                ret  = self.data('category');
             //If more than one category provided
             if (typeof ret === 'string') {
                 ret = ret.split(', ');
-                for (var n in ret) {
+                for (var i = 0; i < ret.length; i++) {
                     //Error checking: make sure data-category has an integer as its value
-                    if (isNaN(parseInt(ret[n]))) {
+                    if (isNaN(parseInt(ret[i]))) {
                         throw new Error('Filterizr: the value of data-category must be a number, starting from value 1 and increasing.');
                     }
-                    if (ret[n] > self._parent._lastCategory) {
-                        self._parent._lastCategory = ret[n];
+                    if (parseInt(ret[i]) > self._parent._lastCategory) {
+                        self._parent._lastCategory = parseInt(ret[i]);
                     }
                 }
             }
@@ -930,7 +982,12 @@
             }
             //if animating trigger filteringEnd event once on parent
             if (self._parent._isAnimating) {
-                self._parent.trigger('filteringEnd');
+                if (self._parent._isShuffling)
+                    self._parent.trigger('shufflingEnd');
+                else if (self._parent._isSorting)
+                    self._parent.trigger('sortingEnd');
+                else
+                    self._parent.trigger('filteringEnd');
                 self._parent._isAnimating = false;
             }
         },
@@ -946,6 +1003,8 @@
             filterOutCss.transform += ' translate3d(' + self._lastPos.left + 'px,' + self._lastPos.top + 'px, 0)';
             //Play animation
             self.css(filterOutCss);
+            //Make unclickable
+            self.css('pointer-events', 'none');
             //Tag as filteringOut for transitionend event
             self._filteringOut = true;
         },
@@ -956,13 +1015,15 @@
         * @private
         */
         _filterIn: function(targetPos) {
-            var self  	    = this,
+            var self        = this,
                 filterInCss = self._parent._makeDeepCopy(self._parent.options.filterInCss);
             //Remove the filteredOut class
             $(self).removeClass('filteredOut');
             //Tag as filtering in for transitionend event
             self._filteringIn = true;
-            self._lastPos 	  = targetPos;
+            self._lastPos     = targetPos;
+            //Make clickable
+            self.css('pointer-events', 'auto');
             //Auto add translate to transform over user-defined filterIn styles
             filterInCss.transform += ' translate3d(' + targetPos.left + 'px,' + targetPos.top + 'px, 0)';
             //Play animation

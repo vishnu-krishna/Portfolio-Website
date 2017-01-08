@@ -1,8 +1,11 @@
 
 .filtr-item {
     padding: 1em;
-    min-height:380px;
+    min-height:295.5px;
     
+}
+.iconheight{
+    min-height:380px !important;
 }
 .item-desc {
     background-color: rgba(0,0,0,0.5);

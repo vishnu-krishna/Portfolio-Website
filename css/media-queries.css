@@ -5,6 +5,8 @@
     }
 }
 
+
+
 @media only screen and (max-width:768px) {
     #colorchange {
         display: none;
@@ -31,4 +33,10 @@
     .navbar-brand {
         display: none;
     }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1300px) {
+    #colorchange {
+        display: none;
+    }
+
 }

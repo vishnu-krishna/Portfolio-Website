@@ -261,7 +261,7 @@ Main Components
     -ms-transform: translateX(-100%);
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
-    padding: 0 5%;
+    padding: 0 3%;
     opacity: 0;
     -webkit-animation-duration: 0.4s;
     -moz-animation-duration: 0.4s;
